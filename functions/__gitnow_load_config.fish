@@ -170,7 +170,7 @@ function __gitnow_load_config -d "Reads the GitNow configuration file"
                     # If command key is not valid then just skip out
                     if test $v_valid -eq 0; continue; end
 
-                    set cmd (echo -n "bind \\$v_command_val \"echo; $v_command_key; commandline -f repaint;\"")
+                    set cmd (echo -n "bind $v_command_val \"echo; $v_command_key; commandline -f repaint;\"")
             end
 
             eval $cmd
